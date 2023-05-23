@@ -12,6 +12,10 @@
     --clr-primary-dark: #293039;
 }
 
+* {
+    font-family: 'Montserrat', sans-serif;;
+}
+
 .container {
     margin-inline: auto;
     display: flex;
