@@ -8,7 +8,7 @@ This project is not complete as I intend to add unit testing, responsiveness, an
 
 ## How to install
 You can run the commands below: <br />
-git clone https://github.com/daveanthonyc/Canva-Clone.git <br />
+git clone https://github.com/daveanthonyc/canvajobpage.git <br />
 cd project-name <br />
 npm install <br />
 
