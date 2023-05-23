@@ -17,6 +17,7 @@
         fade-out 0s ease-in-out 1.6s forwards,
         translateX 1.6s steps(19);
     padding-inline: 7px;
+    padding-block: 10px;
 }
 
 @keyframes translateX {
