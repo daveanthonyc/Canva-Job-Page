@@ -82,7 +82,7 @@ class FilterableSearcher {
         return this.accessibleJobData.length
     }
 
-    test(category: string, input: string): void {
+    updateCategory(category: string, input: string): void {
 
        switch (category) {
         case 'Team':

@@ -6,7 +6,7 @@ function DropDownFilter({ dropDownOptions, placeHolder, category }: { dropDownOp
     return ( 
         <>
             <span>
-                <select className="filter" spellCheck="false" onChange={(e) => {filterableSearcher.test(category, e.target.value)}}>
+                <select className="filter" spellCheck="false" onChange={(e) => {filterableSearcher.updateCategory(category, e.target.value)}}>
                     <option value="" disabled selected>{placeHolder}</option>
                     <option key="starter" value="">All</option>
                     {
