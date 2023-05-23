@@ -91,11 +91,9 @@ main {
         background-color: var(--clr-primary-purple);
         color: white;
     
-        border-radius: 6px;
         padding-inline: 1.7em;
         padding-block: 0.9em;
     
-        font-weight: 600;
         font-size: 1.1em;
         transition: background-color ease-in-out 200ms;
         font-weight: 500;

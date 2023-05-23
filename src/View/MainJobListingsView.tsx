@@ -10,7 +10,6 @@ import { observer } from "mobx-react";
 
 //Type of the prop passed to this component
 type Presenter = {
-    //originalData: JobListing[]
     accessibleJobData: JobListing[]
 
     searchBarValue: string

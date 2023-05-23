@@ -2,8 +2,6 @@ import { JobListing } from "../Model/data"
 import { jobData } from "../Model/joblistings"
 import { makeAutoObservable } from "mobx"
 
-// const jobData = require("../Model/joblistings")
-
 class FilterableSearcher {
     private originalData = jobData
     accessibleJobData;
@@ -24,11 +22,6 @@ class FilterableSearcher {
     }
 
     getSavedJobsArray(): JobListing[] {
-        // this.savedJobs.forEach((job) => {
-        //     job.issaved = true
-        // })
-        
-
         return this.accessibleJobData.filter((job) => {
             if (job.issaved === true) {
                 return job

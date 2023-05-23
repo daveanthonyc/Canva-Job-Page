@@ -25,12 +25,9 @@ function JobCard({ job, index }: { job: JobListing, index: number}) {
                     
                 </div>
             </a>
-            <button className="save-button" onClick={(e) => { setSaved(!saved); !saved ? filterableSearcher.pushIndexOfSavedJob(index) : filterableSearcher.deleteIndexOfSavedJob(index)}}>
+            <button className="save-button" onClick={() => { setSaved(!saved); !saved ? filterableSearcher.pushIndexOfSavedJob(index) : filterableSearcher.deleteIndexOfSavedJob(index)}}>
                 <img title="Save" className={filterableSearcher.accessibleJobData[index].issaved ? "saved-job-heart-selected" : "saved-job-heart"} src="https://pic.onlinewebfonts.com/svg/img_356370.png" alt="heart" />
             </button>
-            {/* <button className="save-button" onClick={(e) => { setSaved(!saved); !saved ? filterableSearcher.pushIndexOfSavedJob(index) : filterableSearcher.deleteIndexOfSavedJob(index)}}>
-                <img title="Save" className={filterableSearcher.accessibleJobData[index].issaved ? "saved-job-heart-selected" : "saved-job-heart"} src="https://pic.onlinewebfonts.com/svg/img_356370.png" alt="heart" />
-            </button> */}
         </div>
         </>
      );
