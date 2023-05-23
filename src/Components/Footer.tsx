@@ -57,10 +57,10 @@ function Footer() {
                 <div className="container">
                     <div className="social">
                         <ul className="social-list">
-                            <li><a className="social-logo" target="_blank" href="https://twitter.com/canva"><img src="https://upload.wikimedia.org/wikipedia/sco/thumb/9/9f/Twitter_bird_logo_2012.svg/1200px-Twitter_bird_logo_2012.svg.png" alt="" /></a></li>
-                            <li><a className="social-logo" target="_blank" href="https://www.facebook.com/canva"><img src="https://www.svgrepo.com/show/98800/facebook-social-logo.svg" alt="" /></a></li>
-                            <li><a className="social-logo" target="_blank" href="https://www.linkedin.com/company/canva/"><img src="https://www.iconpacks.net/icons/1/free-linkedin-icon-112-thumb.png" alt="" /></a></li>
-                            <li><a className="social-logo" target="_blank" href="https://www.instagram.com/canvalife/"><img src="https://www.svgrepo.com/show/30539/instagram-logo.svg" alt="" /></a></li>
+                            <li><a target="_blank" href="https://twitter.com/canva"><img className="social-logo" src="https://upload.wikimedia.org/wikipedia/sco/thumb/9/9f/Twitter_bird_logo_2012.svg/1200px-Twitter_bird_logo_2012.svg.png" alt="" /></a></li>
+                            <li><a target="_blank" href="https://www.facebook.com/canva"><img className="social-logo" src="https://www.svgrepo.com/show/98800/facebook-social-logo.svg" alt="" /></a></li>
+                            <li><a target="_blank" href="https://www.linkedin.com/company/canva/"><img className="social-logo" src="https://www.iconpacks.net/icons/1/free-linkedin-icon-112-thumb.png" alt="" /></a></li>
+                            <li><a target="_blank" href="https://www.instagram.com/canvalife/"><img className="social-logo" src="https://www.svgrepo.com/show/30539/instagram-logo.svg" alt="" /></a></li>
                         </ul>
                         <p className="footer-reserved">&#169; Canva 2023. All rights reserved.</p>
                     </div>
