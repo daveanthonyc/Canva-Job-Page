@@ -1,0 +1,87 @@
+:root {
+    --clr-primary-purple: #7d2ae8;
+    --clr-primary-darker-purple: #5a32fa;
+    --clr-dark-blue: #280f91;
+    --clr-primary-cyan: #00c4cc;
+
+    --clr-neutral-blue: #b4f0f0;
+    --clr-neutral-pink: #ffa5f0;
+    --clr-neutral-white: #e9ecef;
+
+    --clr-primary-black: #0e1318;
+    --clr-primary-dark: #293039;
+}
+
+.job-card {
+    background-color: var(--clr-neutral-blue);
+    margin-bottom: 15px;
+    color: var(--clr-primary-black);
+    border-radius: 15px;
+    display: flex;
+}
+
+.text-area > * + * {
+    margin-top: 1.8rem;
+}
+
+.job-card:hover {
+    background-color: #003a59;
+    color: var(--clr-neutral-white);
+}
+
+.job-link {
+    text-decoration: none;
+}
+
+.card-body {
+    padding-block: 1.4rem;
+    padding-inline: 1.8rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.card-body ul {
+    list-style-type: none;
+    font-weight: 700;
+}
+
+.card-body li {
+    margin-left: -40px;
+}
+
+.card-body h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.saved-job-heart {
+    height: 20px;
+}
+
+.saved-job-heart-selected {
+    height: 20px;
+    filter: invert(34%) sepia(94%) saturate(1251%) hue-rotate(329deg) brightness(114%) contrast(99%);
+}
+
+.saved-job-heart:hover {
+    filter: invert(34%) sepia(94%) saturate(1251%) hue-rotate(329deg) brightness(114%) contrast(99%);
+}
+
+.flex-end {
+    display: flex;
+    align-items: end;
+}
+
+.save-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.relative {
+    position: relative;
+}

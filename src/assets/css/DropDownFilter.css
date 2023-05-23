@@ -1,0 +1,38 @@
+:root {
+    --clr-primary-purple: #7d2ae8;
+    --clr-primary-darker-purple: #5a32fa;
+    --clr-dark-blue: #280f91;
+    --clr-primary-cyan: #00c4cc;
+
+    --clr-neutral-blue: #b4f0f0;
+    --clr-neutral-pink: #ffa5f0;
+    --clr-neutral-white: #e9ecef;
+
+    --clr-primary-black: #0e1318;
+    --clr-primary-dark: #293039;
+}
+
+.filter {
+    padding-inline: 1rem;
+    font-weight: 500;
+    resize: none;
+    outline: none;
+    border: 2px solid var(--clr-primary-purple);
+    border-radius: 5px;
+    height: 3.5rem;
+    width: 100%;
+}
+
+.filter:active, .filter:focus-within {
+    border: 2px solid #c9a5f9;
+}
+
+.filter::after {
+    content: '';
+    background-image: url('https://www.svgrepo.com/show/127047/right-thin-chevron.svg');
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: fixed;
+}
+

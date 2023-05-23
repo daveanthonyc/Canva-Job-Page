@@ -1,0 +1,21 @@
+.section-acknowledgement {
+    text-align: center;
+    background-color: var(--clr-primary-purple);
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding-block: 3rem;
+}
+
+.section-acknowledgement h3 {
+    font-size: 1.2rem;
+}
+
+.section-acknowledgement > * {
+    max-width: 124ch;
+    margin-inline: auto;
+}
+
+.section-acknowledgement > *+* {
+    margin-top: 1rem;
+}
