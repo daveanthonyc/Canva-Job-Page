@@ -13,7 +13,7 @@
 
 header {
     padding-inline: 1rem;
-    padding-block: 1.7rem;
+    padding-block: 1.3rem;
     background-color: white;
     position: sticky;
 }
@@ -103,4 +103,32 @@ header {
     justify-content: center;
     align-items: center;
     font-size: 0.6rem;
+}
+
+@media (max-width: 1200px) {
+    .button {
+
+    
+        border-radius: 6px;
+        padding-inline: 1em;
+        padding-block: 0.9em;
+    
+        font-weight: 600;
+        font-size: 0.8em;
+        text-decoration: none;
+        transition: background-color ease-in-out 200ms;
+    }
+}
+
+@media (max-width: 1000px) {
+    .navbar-nav {
+        list-style: none;
+        display: none;
+        font-size: 0.9rem;
+        gap: 1rem;
+    }
+
+    .logo {
+        width: 4rem;
+    }
 }

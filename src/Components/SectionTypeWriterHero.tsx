@@ -8,7 +8,7 @@ function TypeWriterHero({ children, highlightBoxText }: { children: string, high
                     <div className="row">
                         <div className="flex-center">
                             <h1 className="hero-heading">
-                                {children}
+                                {children}<br className="break"/>
                                 { highlightBoxText && 
                                     <span className="highlight-box"><span className="highlight-box-bottom">{highlightBoxText}</span></span>
                                 }    

@@ -51,7 +51,7 @@ function MainJobListingsView({ props }: { props: Presenter}) {
                     <div className="container">
                         <div className="search-form">
                             <form className="js-job-search-form" action="/" method="GET" onSubmit={(e) => { props.search(); e.preventDefault(); editTextInputFieldValue()}}>
-                                <fieldset>
+                                <fieldset className="search-container">
                                     <div className="form-group">
                                         <input type="text" placeholder="Search" id="search" className="form-control" autoComplete="off" onChange={(e) => {props.searchBarValue = e.target.value}} />
                                     </div>

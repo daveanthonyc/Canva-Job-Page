@@ -12,7 +12,7 @@ function Navbar() {
                     <div className='flex-space-between'>
                         <div>
                             <a href="https://www.lifeatcanva.com/en/">
-                                <img src="https://www.lifeatcanva.com/images/logo.svg" alt="Logo" width={112} height={35} />
+                                <img src="https://www.lifeatcanva.com/images/logo.svg" alt="Logo" width={112} height={35} className="logo"/>
                             </a>
                         </div>
                     <div>

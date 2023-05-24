@@ -18,8 +18,16 @@
     color: var(--clr-primary-black);
     border-radius: 15px;
     display: flex;
+    max-width: 1050px;
 }
 
+.card-body {
+    padding-block: 1.4rem;
+    padding-inline: 1.8rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
 .text-area > * + * {
     margin-top: 1.8rem;
 }
@@ -33,13 +41,6 @@
     text-decoration: none;
 }
 
-.card-body {
-    padding-block: 1.4rem;
-    padding-inline: 1.8rem;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-}
 
 .card-body ul {
     list-style-type: none;
@@ -84,4 +85,57 @@
 
 .relative {
     position: relative;
+}
+
+@media (max-width: 1600px) {
+    .job-card {
+        max-width: 940px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .job-card {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .job-card {
+        max-width: 750px;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .card-body h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 990px) {
+    .job-card {
+        max-width: 700px;
+    }
+
+    .card-body h2 {
+        font-size: 1.3rem;
+    }
+
+    .card-body ul {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 770px) {
+    .job-card {
+        max-width: 500px;
+    }
+    .card-body h2 {
+        font-size: 1.2rem;
+    }
+    
+    .card-body ul {
+        font-size: 0.8rem;
+    }
 }
