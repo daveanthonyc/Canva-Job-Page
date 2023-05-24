@@ -211,6 +211,7 @@ header {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
+        margin-left: -1rem;
     }
     
     
@@ -225,7 +226,7 @@ header {
     
         border-radius: 6px;
         width: 90%;
-        padding-block: 0.5rem;
+        padding-block: 0.7rem;
         margin-inline: auto;
         font-weight: 500;
         font-size: 0.9rem;
