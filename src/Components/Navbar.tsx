@@ -2,8 +2,11 @@ import "../assets/css/Navbar.css"
 import { filterableSearcher } from "../Presenter/Presenter";
 import { observer } from "mobx-react";
 import { Link } from "react-router-dom";
+import { useState } from 'react'
 
 function Navbar() {
+    const [ mobileNavActive, setMobileNavActive] = useState<boolean>(false);
+
     return ( 
         <>
         <header className='header'>
@@ -45,11 +48,29 @@ function Navbar() {
                                 </div>
                             </a>
                         </Link>
+                        <button className="nav-toggle" onClick={() => setMobileNavActive(true)}></button>
                         <a className="button" href="https://flows.beamery.eu/canva/canvalife-talent-community" target='_blank'>Join talent community</a>
                     </div>
                 </div>
             </div>
         </header>
+                            <div className="mobile-nav" data-state={mobileNavActive}>
+                                <button className="nav-toggle-close" onClick={() => setMobileNavActive(false)}></button>
+                                <ul className='navbar-nav-mobile'>
+                                    <li>
+                                        <Link to="/">
+                                            <a className="inside-link" href="https://www.lifeatcanva.com/en/jobs/">Jobs</a>
+                                        </Link>
+                                    </li>
+                                    <li><a className="drop-down inside-link" href="https://www.lifeatcanva.com/en/canva-life/">Canva life</a></li>
+                                    <li><a className="drop-down inside-link" href="https://www.lifeatcanva.com/en/locations/">Teams</a></li>
+                                    <li><a className="drop-down inside-link" href="https://www.lifeatcanva.com/en/teams/">Locations</a></li>
+                                    <li><a className="drop-down inside-link" href="https://www.lifeatcanva.com/en/career-pathways/">Career pathways</a></li>
+                                    <li><a className="inside-link" href="https://www.lifeatcanva.com/en/how-we-hire/">How we hire</a></li>
+                                </ul>
+
+                                <a className="button-nav" href="https://flows.beamery.eu/canva/canvalife-talent-community" target='_blank'>Join talent community</a>
+                            </div>
         </>
      );
 }
