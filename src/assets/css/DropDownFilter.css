@@ -20,7 +20,7 @@
     height: 3.4rem;
     width: 100%;
     border: none;
-    border-right: 16px solid transparent;
+    border-right: 24px solid transparent;
     position: relative;
     box-shadow: 0 0 0 2px var(--clr-primary-purple);
     outline: none;

@@ -21,7 +21,7 @@
     margin-inline: auto;
     display: flex;
     justify-content: center;
-    width: min(90%, 1400px)
+    width: min(90%, 1400px);
 }
 
 .results {
@@ -103,7 +103,6 @@
     }
 
     .search-button {
-        height: 0.8rem;
         margin-top: 1rem;
     }
 }
@@ -116,18 +115,7 @@
 
 @media (max-width: 575px) {
     .form-control {
-        width: 300px;
-    }
-    
-    .form-group {
-    }
-    
-    .form-flex {
-        /* display: flex; */
-    }
-
-    .form-flex > * + * {
-        /* margin-top: 1rem; */
+        width: auto;
     }
     
     .search-button {
@@ -143,19 +131,6 @@
     outline: none;
 }
 
-.form-control::before {
-    content:'';
-    width: 100px;
-    height: 100px;
-    background-color: #0e1318;
-    display: block;
-    position: relative;
-    bottom: 0px;
-    right: -30px;
-    /* background: url('https://cdn3.iconfinder.com/data/icons/feather-5/24/search-512.png'); */
-    z-index: 30;
-}
-
 fieldset {
     border: none;
 }
@@ -163,7 +138,6 @@ fieldset {
 main {
     padding-bottom: 20rem;
 }
-
 
 .form-group {
     width: 100%;

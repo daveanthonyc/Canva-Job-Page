@@ -3,8 +3,11 @@
     background-color: var(--clr-primary-purple);
     color: white;
     font-size: 0.9rem;
-    font-weight: 500;
-    padding-block: 3rem;
+    font-weight: 400;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    line-height: 1.6;
+    padding-inline: 5%;
 }
 
 .section-acknowledgement h3 {
@@ -18,4 +21,34 @@
 
 .section-acknowledgement > *+* {
     margin-top: 1rem;
+}
+
+@media(max-width: 1600px) {
+    .section-acknowledgement > * {
+        max-width: 109ch;
+    }
+}
+
+@media(max-width: 1400px) {
+    .section-acknowledgement > * {
+        max-width: 97ch;
+    }
+}
+
+@media(max-width: 1400px) {
+    .section-acknowledgement > * {
+        max-width: 80ch;
+    }
+}
+
+@media(max-width: 990px) {
+    .section-acknowledgement > * {
+        max-width: 72ch;
+    }
+}
+
+@media(max-width: 770px) {
+    .section-acknowledgement > * {
+        max-width: 53ch;
+    }
 }

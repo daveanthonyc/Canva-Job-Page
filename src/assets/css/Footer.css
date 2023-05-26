@@ -68,6 +68,21 @@
     margin-left: auto;
 }
 
+@media(max-width: 1000px ) {
+    .social {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        margin-top: 3.5rem;
+        margin-inline: auto;
+    }
+
+    .social-list {
+        margin-bottom: 1.5rem;
+        padding: 0;
+    } 
+}
+
 .social-logo {
     width: 20px;
 }
