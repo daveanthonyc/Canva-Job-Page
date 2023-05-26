@@ -1,4 +1,5 @@
 import "../assets/css/Footer.css"
+import Accordion from "./Accordion";
 
 function Footer() {
     return ( 
@@ -7,49 +8,54 @@ function Footer() {
                 <div className="container">
                     <div className="flex">
                         <div className="block">
-                            <h2>Featured Links</h2>
-                            <ul>
-                                <a href="https://www.lifeatcanva.com/en/canva-life/belong-at-canva/">Canva Communities</a>
-                                <a href="https://www.lifeatcanva.com/en/canva-life/our-culture-and-benefits/">Our Philosophy</a>
-                                <a href="https://www.lifeatcanva.com/en/search/">Search</a>
-                            </ul>
+                            <Accordion heading="Featured Links">
+                                <ul>
+                                    <a href="https://www.lifeatcanva.com/en/canva-life/belong-at-canva/">Canva Communities</a>
+                                    <a href="https://www.lifeatcanva.com/en/canva-life/our-culture-and-benefits/">Our Philosophy</a>
+                                    <a href="https://www.lifeatcanva.com/en/search/">Search</a>
+                                </ul>
+                            </Accordion>
                         </div>
                         <div className="block">
-                            <h2>Teams</h2>
-                            <ul>
-                                <a href="https://www.lifeatcanva.com/en/teams/people/">People</a>
-                                <a href="https://www.lifeatcanva.com/en/teams/engineering/">Engineering</a>
-                                <a href="https://www.lifeatcanva.com/en/teams/marketing/">Marketing</a>
-                                <a href="https://www.lifeatcanva.com/en/teams/sales-and-success/">Sales and Success</a>
-                                <a href="https://www.lifeatcanva.com/en/teams/operations/">Operations</a>
-                                <a href="https://www.lifeatcanva.com/en/teams/finance/">Finance</a>
-                                <a href="https://www.lifeatcanva.com/en/teams/legal/">Legal</a>
-                                <a href="https://www.lifeatcanva.com/en/teams/design/">Design</a>
-                                <a href="https://www.lifeatcanva.com/en/teams/product-management/">Product Management</a>
-                                <a href="https://www.lifeatcanva.com/en/teams/customer-happiness/">Customer Happiness</a>
-                                <a href="https://www.lifeatcanva.com/en/teams/information-technology/">Information Technology</a>
-                            </ul>
+                                <Accordion heading="Teams">
+                                    <ul>
+                                        <a href="https://www.lifeatcanva.com/en/teams/people/">People</a>
+                                        <a href="https://www.lifeatcanva.com/en/teams/engineering/">Engineering</a>
+                                        <a href="https://www.lifeatcanva.com/en/teams/marketing/">Marketing</a>
+                                        <a href="https://www.lifeatcanva.com/en/teams/sales-and-success/">Sales and Success</a>
+                                        <a href="https://www.lifeatcanva.com/en/teams/operations/">Operations</a>
+                                        <a href="https://www.lifeatcanva.com/en/teams/finance/">Finance</a>
+                                        <a href="https://www.lifeatcanva.com/en/teams/legal/">Legal</a>
+                                        <a href="https://www.lifeatcanva.com/en/teams/design/">Design</a>
+                                        <a href="https://www.lifeatcanva.com/en/teams/product-management/">Product Management</a>
+                                        <a href="https://www.lifeatcanva.com/en/teams/customer-happiness/">Customer Happiness</a>
+                                        <a href="https://www.lifeatcanva.com/en/teams/information-technology/">Information Technology</a>
+                                    </ul>
+                                </Accordion>
+                            
                         </div>
                         <div className="block">
-                            <h2>Locations</h2>
-                            <ul>
-                                <a href="https://www.lifeatcanva.com/en/locations/australia/">Canva Australia</a>
-                                <a href="https://www.lifeatcanva.com/en/locations/new-zealand/">New Zealand</a>
-                                <a href="https://www.lifeatcanva.com/en/locations/united-states/">United States</a>
-                                <a href="https://www.lifeatcanva.com/en/locations/united-kingdom/">United Kingdom</a>
-                                <a href="https://www.lifeatcanva.com/en/locations/china/">China</a>
-                                <a href="https://www.lifeatcanva.com/en/locations/austria/">Austria</a>
-                                <a href="https://www.lifeatcanva.com/en/locations/philippines/">Philippines</a>
-                                <a href="https://www.lifeatcanva.com/en/locations/czech-republic/">Czech Republic</a>
-                            </ul>
+                            <Accordion heading="Locations">
+                                <ul>
+                                    <a href="https://www.lifeatcanva.com/en/locations/australia/">Canva Australia</a>
+                                    <a href="https://www.lifeatcanva.com/en/locations/new-zealand/">New Zealand</a>
+                                    <a href="https://www.lifeatcanva.com/en/locations/united-states/">United States</a>
+                                    <a href="https://www.lifeatcanva.com/en/locations/united-kingdom/">United Kingdom</a>
+                                    <a href="https://www.lifeatcanva.com/en/locations/china/">China</a>
+                                    <a href="https://www.lifeatcanva.com/en/locations/austria/">Austria</a>
+                                    <a href="https://www.lifeatcanva.com/en/locations/philippines/">Philippines</a>
+                                    <a href="https://www.lifeatcanva.com/en/locations/czech-republic/">Czech Republic</a>
+                                </ul>
+                            </Accordion>
                         </div>
                         <div className="block">
-                            <h2>Footer Links</h2>
-                            <ul>
-                                <a href="https://www.lifeatcanva.com/en/cookies/">Cookies</a>
-                                <a href="https://www.lifeatcanva.com/en/privacy-policy/">Privacy Policy</a>
-                                <a href="https://www.lifeatcanva.com/en/sitemap/">Sitemap</a>
-                            </ul>
+                            <Accordion heading="Footer Links">
+                                <ul>
+                                    <a href="https://www.lifeatcanva.com/en/cookies/">Cookies</a>
+                                    <a href="https://www.lifeatcanva.com/en/privacy-policy/">Privacy Policy</a>
+                                    <a href="https://www.lifeatcanva.com/en/sitemap/">Sitemap</a>
+                                </ul>
+                            </Accordion>
                         </div>
                     </div>
                 </div>

@@ -69,9 +69,16 @@
 }
 
 @media(max-width: 1000px ) {
+    .block > *+* {
+        margin-top: 0rem;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
     .social {
         flex-direction: column;
-        gap: 20px;
         align-items: center;
         margin-top: 3.5rem;
         margin-inline: auto;

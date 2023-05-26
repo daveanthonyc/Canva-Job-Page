@@ -1,0 +1,53 @@
+.accordion-button {
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: white;
+    background:none;
+    border: none;
+    text-align: left;
+    margin-left: -5px;
+}
+
+.accordion-content {
+    overflow: hidden;
+    transition: all ease-in-out 300ms;
+}
+
+
+@media (max-width: 1000px) {
+    .accordion-button {
+        cursor: pointer;
+        border-bottom: 1px solid #597cff;
+        padding-block: 1.5rem;
+        position: relative;
+    }
+
+    .accordion-content {
+        border-bottom: 1px solid #597cff;
+    }
+    
+    .accordion-button::after {
+        content: url("https://cdn-icons-png.flaticon.com/512/25/25629.png");
+        transform: scale(0.03);
+        filter: invert(1);
+        display: block;
+        height: 0px;
+        width: 0px;
+        position: absolute;
+        right: 20px;
+        top: 30px;
+    }
+    .accordion-content[data-state="false"] {
+        max-height: 0px;
+        border-bottom: 1px solid rgba(0,0,0,0);
+    }
+    
+    .accordion-content[data-state="true"] {
+        padding-top: 1rem;
+        max-height: 400px;
+        margin-bottom: 10px;
+        /* border-bottom: 1rem solid transparent; */
+        padding-bottom: 1rem;
+    }
+}
