@@ -3,11 +3,11 @@
     --clr-primary-darker-purple: #5a32fa;
     --clr-dark-blue: #280f91;
     --clr-primary-cyan: #00c4cc;
-
+    
     --clr-neutral-blue: #b4f0f0;
     --clr-neutral-pink: #ffa5f0;
     --clr-neutral-white: #e9ecef;
-
+    
     --clr-primary-black: #0e1318;
     --clr-primary-dark: #293039;
 }
@@ -15,6 +15,9 @@
 * {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
+}
+main {
+    padding-bottom: 20rem;
 }
 
 .container {
@@ -91,6 +94,14 @@
 }
 
 @media (max-width: 990px) {
+    main {
+        padding-bottom: 7.5rem;
+    }
+
+    .search-form {
+        padding-bottom: 2rem;
+    }
+
     .form-control {
         width: 620px;
         padding-block: 1rem;
@@ -104,6 +115,14 @@
 
     .search-button {
         margin-top: 1rem;
+    }
+
+    .section-results {
+        padding-block: 2rem;
+    }
+
+    .results {
+        font-size: 1rem;
     }
 }
 
@@ -135,9 +154,6 @@ fieldset {
     border: none;
 }
 
-main {
-    padding-bottom: 20rem;
-}
 
 .form-group {
     width: 100%;
