@@ -16,15 +16,18 @@
     padding-inline: 1rem;
     font-weight: 500;
     resize: none;
-    outline: none;
-    border: 2px solid var(--clr-primary-purple);
-    border-radius: 5px;
-    height: 3.5rem;
+    border-radius: 3px;
+    height: 3.4rem;
     width: 100%;
+    border: none;
+    border-right: 16px solid transparent;
+    position: relative;
+    box-shadow: 0 0 0 2px var(--clr-primary-purple);
+    outline: none;
 }
 
 .filter:active, .filter:focus-within {
-    border: 2px solid #c9a5f9;
+    box-shadow: 0 0 0 2px #c9a5f9;
 }
 
 .filter::after {
