@@ -1,10 +1,11 @@
 # Canva Job Page Clone
+Design Doc - https://docs.google.com/document/d/1OQOigG9JuG1ECfpBAcUyml3FR6SV6dGuRfrt65rOqB8/edit?usp=sharing
 
 ## Project Description
 This is a web app that mimics the design and functionality of the job listing page from the Canva website (found here -> https://www.lifeatcanva.com/en/jobs/). It allows the user to search for job listings and filter them by drop down category filters, or key word search and allows users to save jobs and view them in a separate page as well. This project was created with Vite, React, TypeScript and MobX and was done so with the intention of learning the technologies that Canva uses with the addition of the MVP architecture which Canva supposedly uses as well.
 
 ## Further developments
-This project is not complete as I intend to add unit testing, responsiveness, and also fully working job saving functionality
+This project is not complete as I intend to add unit testing, drop down navigation menus and also fully working job saving functionality
 
 ## How to install
 You can run the commands below: <br />
