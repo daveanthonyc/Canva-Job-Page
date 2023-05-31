@@ -13,29 +13,23 @@ function Navbar() {
             <div className='container-fluid'>
                 <div className='flex-space-between'>
                     <div className='flex-space-between'>
-                        <div>
-                            <a href="https://www.lifeatcanva.com/en/">
-                                <img src="https://www.lifeatcanva.com/images/logo.svg" alt="Logo" width={112} height={35} className="logo"/>
-                            </a>
-                        </div>
-                    <div>
+                        <a href="https://www.lifeatcanva.com/en/">
+                            <img src="https://www.lifeatcanva.com/images/logo.svg" alt="Logo" width={112} height={35} className="logo"/>
+                        </a>
                         <nav>
-                            <div>
-                                <ul className='navbar-nav'>
-                                    <li>
-                                        <Link to="/">
-                                            <a href="https://www.lifeatcanva.com/en/jobs/">Jobs</a>
-                                        </Link>
-                                    </li>
-                                    <li><a className="drop-down" href="https://www.lifeatcanva.com/en/canva-life/">Canva life</a></li>
-                                    <li><a className="drop-down" href="https://www.lifeatcanva.com/en/locations/">Teams</a></li>
-                                    <li><a className="drop-down" href="https://www.lifeatcanva.com/en/teams/">Locations</a></li>
-                                    <li><a className="drop-down" href="https://www.lifeatcanva.com/en/career-pathways/">Career pathways</a></li>
-                                    <li><a href="https://www.lifeatcanva.com/en/how-we-hire/">How we hire</a></li>
-                                </ul>
-                            </div>
+                            <ul className='navbar-nav'>
+                                <li>
+                                    <Link to="/">
+                                        <a href="https://www.lifeatcanva.com/en/jobs/">Jobs</a>
+                                    </Link>
+                                </li>
+                                <li><a className="drop-down" href="https://www.lifeatcanva.com/en/canva-life/">Canva life</a></li>
+                                <li><a className="drop-down" href="https://www.lifeatcanva.com/en/locations/">Teams</a></li>
+                                <li><a className="drop-down" href="https://www.lifeatcanva.com/en/teams/">Locations</a></li>
+                                <li><a className="drop-down" href="https://www.lifeatcanva.com/en/career-pathways/">Career pathways</a></li>
+                                <li><a href="https://www.lifeatcanva.com/en/how-we-hire/">How we hire</a></li>
+                            </ul>
                         </nav>
-                    </div>
                     </div>
 
 
@@ -54,23 +48,24 @@ function Navbar() {
                 </div>
             </div>
         </header>
-                            <div className="mobile-nav" data-state={mobileNavActive}>
-                                <button className="nav-toggle-close" onClick={() => setMobileNavActive(false)}></button>
-                                <ul className='navbar-nav-mobile'>
-                                    <li>
-                                        <Link to="/">
-                                            <a className="inside-link" href="https://www.lifeatcanva.com/en/jobs/">Jobs</a>
-                                        </Link>
-                                    </li>
-                                    <li><a className="drop-down inside-link" href="https://www.lifeatcanva.com/en/canva-life/">Canva life</a></li>
-                                    <li><a className="drop-down inside-link" href="https://www.lifeatcanva.com/en/locations/">Teams</a></li>
-                                    <li><a className="drop-down inside-link" href="https://www.lifeatcanva.com/en/teams/">Locations</a></li>
-                                    <li><a className="drop-down inside-link" href="https://www.lifeatcanva.com/en/career-pathways/">Career pathways</a></li>
-                                    <li><a className="inside-link" href="https://www.lifeatcanva.com/en/how-we-hire/">How we hire</a></li>
-                                </ul>
+        
+        <div className="mobile-nav" data-state={mobileNavActive}>
+            <button className="nav-toggle-close" onClick={() => setMobileNavActive(false)}></button>
+            <ul className='navbar-nav-mobile'>
+                <li>
+                    <Link to="/">
+                        <a className="inside-link" href="https://www.lifeatcanva.com/en/jobs/">Jobs</a>
+                    </Link>
+                </li>
+                <li><a className="drop-down inside-link" href="https://www.lifeatcanva.com/en/canva-life/">Canva life</a></li>
+                <li><a className="drop-down inside-link" href="https://www.lifeatcanva.com/en/locations/">Teams</a></li>
+                <li><a className="drop-down inside-link" href="https://www.lifeatcanva.com/en/teams/">Locations</a></li>
+                <li><a className="drop-down inside-link" href="https://www.lifeatcanva.com/en/career-pathways/">Career pathways</a></li>
+                <li><a className="inside-link" href="https://www.lifeatcanva.com/en/how-we-hire/">How we hire</a></li>
+            </ul>
 
-                                <a className="button-nav" href="https://flows.beamery.eu/canva/canvalife-talent-community" target='_blank'>Join talent community</a>
-                            </div>
+            <a className="button-nav" href="https://flows.beamery.eu/canva/canvalife-talent-community" target='_blank'>Join talent community</a>
+        </div>
         </>
      );
 }
