@@ -7,7 +7,6 @@ function JobCard({ job, index }: { job: JobListing, index: number}) {
     const [saved, setSaved] = useState<boolean>(job.issaved);
 
     return ( 
-        <>
         <div className="relative">
             <a className="job-link" href={job.url}>
                 <div className="job-card">
@@ -29,7 +28,6 @@ function JobCard({ job, index }: { job: JobListing, index: number}) {
                 <img title="Save" className={filterableSearcher.accessibleJobData[index].issaved ? "saved-job-heart-selected" : "saved-job-heart"} src="https://pic.onlinewebfonts.com/svg/img_356370.png" alt="heart" />
             </button>
         </div>
-        </>
      );
 }
 
