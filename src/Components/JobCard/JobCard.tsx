@@ -1,7 +1,7 @@
-import { JobListing } from "../Model/data";
-import "../assets/css/JobCard.css"
+import { JobListing } from "../../Model/data";
+import "./JobCard.css"
 import { useState } from 'react'
-import { filterableSearcher } from "../Presenter/Presenter";
+import { filterableSearcher } from "../../Presenter/Presenter";
 
 function JobCard({ job, index }: { job: JobListing, index: number}) {
     const [saved, setSaved] = useState<boolean>(job.issaved);

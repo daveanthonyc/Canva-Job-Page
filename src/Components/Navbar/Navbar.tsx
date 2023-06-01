@@ -1,5 +1,5 @@
-import "../assets/css/Navbar.css"
-import { filterableSearcher } from "../Presenter/Presenter";
+import "./Navbar.css"
+import { filterableSearcher } from "../../Presenter/Presenter";
 import { observer } from "mobx-react";
 import { Link } from "react-router-dom";
 import { useState } from 'react'

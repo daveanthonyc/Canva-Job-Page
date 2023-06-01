@@ -1,4 +1,4 @@
-import "../assets/css/SectionAcknowledge.css"
+import "./SectionAcknowledge.css"
 
 function SectionAcknowledge() {
     return ( 

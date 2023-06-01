@@ -1,4 +1,4 @@
-import "../assets/css/SectionTypeWriterHero.css"
+import "./SectionTypeWriterHero.css"
 
 function TypeWriterHero({ children, highlightBoxText }: { children: string, highlightBoxText?: string}) {
     return ( 

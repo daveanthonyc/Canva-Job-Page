@@ -1,12 +1,12 @@
-import Footer from "../Components/Footer";
-import Navbar from "../Components/Navbar";
-import SectionAcknowledge from "../Components/SectionAcknowledge";
-import TypeWriterHero from "../Components/SectionTypeWriterHero";
-import JobCard from "../Components/JobCard";
+import Footer from "../Components/Footer/Footer";
+import Navbar from "../Components/Navbar/Navbar";
+import SectionAcknowledge from "../Components/SectionAcknowledge/SectionAcknowledge";
+import TypeWriterHero from "../Components/SectionTypeWriterHero/SectionTypeWriterHero";
+import JobCard from "../Components/JobCard/JobCard";
 import { filterableSearcher } from "../Presenter/Presenter";
 import { Link } from "react-router-dom";
 import { useState } from "react"
-import "../assets/css/SavedJobsView.css"
+import "./SavedJobsView.css"
 import { observer } from "mobx-react";
 
 function SavedJobsView() {

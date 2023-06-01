@@ -1,11 +1,11 @@
-import "../assets/css/MainJobListingsView.css"
+import "./MainJobListingsView.css"
 import { JobListing } from "../Model/data";
-import JobCard from "../Components/JobCard";
-import DropDownFilter from "../Components/DropDownFilter"; 
-import Footer from "../Components/Footer";
-import SectionAcknowledge from "../Components/SectionAcknowledge";
-import TypeWriterHero from "../Components/SectionTypeWriterHero";
-import Navbar from "../Components/Navbar";
+import JobCard from "../Components/JobCard/JobCard";
+import DropDownFilter from "../Components/DropDownFilter/DropDownFilter"; 
+import Footer from "../Components/Footer/Footer";
+import SectionAcknowledge from "../Components/SectionAcknowledge/SectionAcknowledge";
+import TypeWriterHero from "../Components/SectionTypeWriterHero/SectionTypeWriterHero";
+import Navbar from "../Components/Navbar/Navbar";
 import { observer } from "mobx-react";
 
 //Type of the prop passed to this component

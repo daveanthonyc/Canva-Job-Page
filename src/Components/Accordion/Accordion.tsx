@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import "../assets/css/Accordion.css"
+import "./Accordion.css"
 import { useState } from 'react'
 
 function Accordion({children, heading }: {children: ReactNode, heading: string}) {

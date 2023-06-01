@@ -1,5 +1,5 @@
-import "../assets/css/DropDownFilter.css"
-import { filterableSearcher } from "../Presenter/Presenter";
+import "./DropDownFilter.css"
+import { filterableSearcher } from "../../Presenter/Presenter";
 import { observer } from "mobx-react";
 
 function DropDownFilter({ dropDownOptions, placeHolder, category }: { dropDownOptions: string[], placeHolder: string, category: string}) {

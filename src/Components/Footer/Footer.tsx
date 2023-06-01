@@ -1,5 +1,5 @@
-import "../assets/css/Footer.css"
-import Accordion from "./Accordion";
+import "./Footer.css"
+import Accordion from "../Accordion/Accordion";
 
 function Footer() {
     return ( 
