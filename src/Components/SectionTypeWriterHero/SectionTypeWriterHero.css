@@ -14,7 +14,7 @@
     white-space: nowrap;
     overflow: hidden;
     animation: 
-    typing 1.6s steps(19),
+    typing 1.5s steps(19),
     cursor 0.6s step-end 3 alternate,
     fade-out 0s ease-in-out 1.6s forwards,
     translateX 1.6s steps(19);

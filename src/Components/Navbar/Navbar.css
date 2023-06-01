@@ -155,7 +155,7 @@
         height: 40px;
         border: none;
         background-color: rgba(0,0,0,0);
-        background-image: url(../images/menu_FILL0_wght400_GRAD0_opsz48.png);
+        background-image: url(/src/assets/images/menu_FILL0_wght400_GRAD0_opsz48.png);
         background-origin: center;
         background-repeat: no-repeat;
         background-size:80%;
@@ -169,7 +169,7 @@
         height: 40px;
         border: none;
         background-color: rgba(0,0,0,0);
-        background-image: url(../images/close_FILL0_wght400_GRAD0_opsz48.png);
+        background-image: url(/src/assets/images/close_FILL0_wght400_GRAD0_opsz48.png);
         background-origin: center;
         background-repeat: no-repeat;
         background-size:80%;
