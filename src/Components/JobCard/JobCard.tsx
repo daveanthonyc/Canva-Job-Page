@@ -1,9 +1,8 @@
-import { JobListing } from "../../Model/data";
+import { JobListing } from "../../Model/JobListing";
 import "./JobCard.css"
 import { useState } from 'react'
-import { filterableSearcher } from "../../Presenter/Presenter";
 
-function JobCard({ job, index }: { job: JobListing, index: number}) {
+function JobCard({ job, index, addSavedJob, deleteSavedJob }: { job: JobListing, index: number, addSavedJob: (index: number) => void, deleteSavedJob: (index: number) => void}) {
     const [saved, setSaved] = useState<boolean>(job.issaved);
 
     return ( 
@@ -24,8 +23,8 @@ function JobCard({ job, index }: { job: JobListing, index: number}) {
                     
                 </div>
             </a>
-            <button className="save-button" onClick={() => { setSaved(!saved); !saved ? filterableSearcher.pushIndexOfSavedJob(index) : filterableSearcher.deleteIndexOfSavedJob(index)}}>
-                <img title="Save" className={filterableSearcher.accessibleJobData[index].issaved ? "saved-job-heart-selected" : "saved-job-heart"} src="https://pic.onlinewebfonts.com/svg/img_356370.png" alt="heart" />
+            <button className="save-button" onClick={() => { setSaved(!saved); !saved ? addSavedJob(index) : deleteSavedJob(index)}}>
+                <img title="Save" className={saved ? "saved-job-heart-selected" : "saved-job-heart"} src="https://pic.onlinewebfonts.com/svg/img_356370.png" alt="heart" />
             </button>
         </div>
      );

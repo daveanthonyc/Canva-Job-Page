@@ -1,10 +1,9 @@
 import "./Navbar.css"
-import { filterableSearcher } from "../../Presenter/Presenter";
 import { observer } from "mobx-react";
 import { Link } from "react-router-dom";
 import { useState } from 'react'
 
-function Navbar() {
+function Navbar({getSavedJobs}: {getSavedJobs: () => number}) {
     const [ mobileNavActive, setMobileNavActive] = useState<boolean>(false);
 
     return ( 
@@ -38,7 +37,7 @@ function Navbar() {
                             <a href="" className="saved-job-a">
                                 <img title="Save" className="saved-job-link" src="https://pic.onlinewebfonts.com/svg/img_356370.png" alt="heart" />
                                 <div className="saved-job-counter">
-                                    {filterableSearcher.getSavedJobs()}
+                                    {/* {getSavedJobs()} */}
                                 </div>
                             </a>
                         </Link>

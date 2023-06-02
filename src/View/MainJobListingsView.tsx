@@ -1,5 +1,4 @@
 import "./MainJobListingsView.css"
-import { JobListing } from "../Model/data";
 import JobCard from "../Components/JobCard/JobCard";
 import DropDownFilter from "../Components/DropDownFilter/DropDownFilter"; 
 import Footer from "../Components/Footer/Footer";
@@ -7,31 +6,7 @@ import SectionAcknowledge from "../Components/SectionAcknowledge/SectionAcknowle
 import TypeWriterHero from "../Components/SectionTypeWriterHero/SectionTypeWriterHero";
 import Navbar from "../Components/Navbar/Navbar";
 import { observer } from "mobx-react";
-
-//Type of the prop passed to this component
-type Presenter = {
-    accessibleJobData: JobListing[]
-
-    searchBarValue: string
-
-    searchCriteriaTeam: string
-    searchCriteriaSpecialty: string
-    searchCriteriaLocation: string
-    searchCriteriaContract: string
-
-    savedJobs: JobListing[]
-
-    getSavedJobsArray: () => JobListing[]
-    removeJobs: () => void
-    search: () => void
-    getNumberOfResults: () => number
-    updateCategory: (category: string, input: string) => void
-    pushIndexOfSavedJob: (index: number) => void
-    deleteIndexOfSavedJob: (index: number) => void
-    getSavedJobs: () => number
-}
-
-
+import { Presenter } from "../Presenter/Presenter";
 
 function MainJobListingsView({ props }: { props: Presenter}) {
 
@@ -42,7 +17,7 @@ function MainJobListingsView({ props }: { props: Presenter}) {
 
     return ( 
         <>
-            <Navbar />
+            <Navbar getSavedJobs={props.getSavedJobs}/>
             <TypeWriterHero highlightBoxText="dream job">Find your </TypeWriterHero>
 
             <main>
@@ -57,16 +32,16 @@ function MainJobListingsView({ props }: { props: Presenter}) {
                                     </div>
                                     <div className="form-flex">
                                         <div className="form-group">
-                                            <DropDownFilter category="Team" placeHolder="Team" dropDownOptions={["Design", "Engineering", "Freelance & Contract", "Internship"]}></DropDownFilter>
+                                            <DropDownFilter updateCategory={props.updateCategory} category="Team" placeHolder="Team" dropDownOptions={["Design", "Engineering", "Freelance & Contract", "Internship"]}></DropDownFilter>
                                         </div>
                                         <div className="form-group">
-                                            <DropDownFilter category="Specialty" placeHolder="Specialty" dropDownOptions={["Frontend", "Backend", "Fullstack", "Tech Support", "Data Analytics", "Product Design", "Research"]}></DropDownFilter>
+                                            <DropDownFilter updateCategory={props.updateCategory} category="Specialty" placeHolder="Specialty" dropDownOptions={["Frontend", "Backend", "Fullstack", "Tech Support", "Data Analytics", "Product Design", "Research"]}></DropDownFilter>
                                         </div>
                                         <div className="form-group">
-                                            <DropDownFilter category="Location" placeHolder="Location" dropDownOptions={["Sydney", "Manila", "Auckland", "Vienna"]}></DropDownFilter>
+                                            <DropDownFilter updateCategory={props.updateCategory} category="Location" placeHolder="Location" dropDownOptions={["Sydney", "Manila", "Auckland", "Vienna"]}></DropDownFilter>
                                         </div>
                                         <div className="form-group">
-                                            <DropDownFilter category="Contract Type" placeHolder="Contract Type" dropDownOptions={["Contract & Freelance", "Full-time", "Internship"]}></DropDownFilter>
+                                            <DropDownFilter updateCategory={props.updateCategory} category="Contract Type" placeHolder="Contract Type" dropDownOptions={["Contract & Freelance", "Full-time", "Internship"]}></DropDownFilter>
                                         </div>
                                         <button className="search-button" type="button" onClick={() => {props.search();}}>Search</button>
                                     </div>
@@ -85,7 +60,7 @@ function MainJobListingsView({ props }: { props: Presenter}) {
                             }
                         </section>
                         {props.accessibleJobData.map((job, index) => {
-                            return <JobCard index={index} key={job.url} job={job}/>
+                            return <JobCard index={index} key={job.url} job={job} addSavedJob={props.pushIndexOfSavedJob} deleteSavedJob={props.deleteIndexOfSavedJob}/>
                         })}
                     </div>
                 </div>

@@ -1,10 +1,16 @@
 import MainJobListingsView from "./View/MainJobListingsView"
-import { filterableSearcher } from "./Presenter/Presenter"
+import { FilterableSearcher } from "./Presenter/Presenter"
+import { JobListingProvider } from "./Model/JobListingProvider"
+
+const jobProvider = new JobListingProvider()
+export const filterableSearcher = new FilterableSearcher(jobProvider)
+
 
 function App() {
+
   return (
     <>
-      <MainJobListingsView props={filterableSearcher}/>
+      <MainJobListingsView props={filterableSearcher} />
     </>
   )
 }

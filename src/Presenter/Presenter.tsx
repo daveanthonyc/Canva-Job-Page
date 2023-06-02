@@ -1,10 +1,10 @@
-import { JobListing } from "../Model/data"
-import { jobData } from "../Model/joblistings"
+import { JobListing } from "../Model/JobListing"
+import { JobListingProvider } from "../Model/JobListingProvider";
 import { makeAutoObservable } from "mobx"
 
-class FilterableSearcher {
-    private originalData = jobData
-    accessibleJobData;
+export class FilterableSearcher {
+    private originalData: JobListing[]
+    accessibleJobData: JobListing[]
 
     searchBarValue = ""
 
@@ -16,8 +16,9 @@ class FilterableSearcher {
 
     savedJobs:JobListing[] = []
 
-    constructor(data: JobListing[]) {
-        this.accessibleJobData = data
+    constructor(jobProvider: JobListingProvider) {
+        this.originalData = jobProvider.getJobs()
+        this.accessibleJobData = [...this.originalData]
         makeAutoObservable(this)
     }
 
@@ -118,4 +119,25 @@ class FilterableSearcher {
     }
 }
 
-export const filterableSearcher = new FilterableSearcher(jobData)
+//Type of the prop passed to this component
+export type Presenter = {
+    accessibleJobData: JobListing[]
+
+    searchBarValue: string
+
+    searchCriteriaTeam: string
+    searchCriteriaSpecialty: string
+    searchCriteriaLocation: string
+    searchCriteriaContract: string
+
+    savedJobs: JobListing[]
+
+    getSavedJobsArray: () => JobListing[]
+    removeJobs: () => void
+    search: () => void
+    getNumberOfResults: () => number
+    updateCategory: (category: string, input: string) => void
+    pushIndexOfSavedJob: (index: number) => void
+    deleteIndexOfSavedJob: (index: number) => void
+    getSavedJobs: () => number
+}

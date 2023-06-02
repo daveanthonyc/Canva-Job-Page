@@ -3,18 +3,18 @@ import Navbar from "../Components/Navbar/Navbar";
 import SectionAcknowledge from "../Components/SectionAcknowledge/SectionAcknowledge";
 import TypeWriterHero from "../Components/SectionTypeWriterHero/SectionTypeWriterHero";
 import JobCard from "../Components/JobCard/JobCard";
-import { filterableSearcher } from "../Presenter/Presenter";
 import { Link } from "react-router-dom";
 import { useState } from "react"
 import "./SavedJobsView.css"
 import { observer } from "mobx-react";
+import { filterableSearcher as props } from "../App";
 
 function SavedJobsView() {
-    const [ savedJobs, setSavedJobs ] = useState<number>(filterableSearcher.getSavedJobs())
+    const [ savedJobs, setSavedJobs ] = useState<number>(props.getSavedJobs())
 
     return ( 
         <>
-            <Navbar />
+            <Navbar getSavedJobs={props.getSavedJobs}/>
             <TypeWriterHero>Your jobs</TypeWriterHero>
             <main>
                 <div className="container">
@@ -44,9 +44,9 @@ function SavedJobsView() {
                             }
                             
                             {
-                                filterableSearcher.getSavedJobsArray().map((job, index) => {
+                                props.getSavedJobsArray().map((job, index) => {
                                     console.log(job.issaved)
-                                    return <JobCard index={index} key={job.url} job={job}/>
+                                    return <JobCard addSavedJob={props.pushIndexOfSavedJob} deleteSavedJob={props.deleteIndexOfSavedJob} index={index} key={job.url} job={job}/>
                                 })
                             }
 
@@ -55,7 +55,7 @@ function SavedJobsView() {
                                     ""
                                 :
                                     <div className="center">
-                                        <button className="search-button" type="button" onClick={() => {filterableSearcher.removeJobs(); setSavedJobs(0);}}>Remove All</button>
+                                        <button className="search-button" type="button" onClick={() => {props.removeJobs(); setSavedJobs(0);}}>Remove All</button>
                                     </div>
                             }
                         </div>
